@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32"href="icon-share.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: hsl(210, 46%, 95%);
+            font-family:"Manrope", sans-serif;
+            font-size: 0.813rem;
+            font-weight: 500;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .main-content{
+            width: 700px;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            margin: 60px;
+            border-radius: 12px;
+        }
+        .image-cover{
+            width: 41%;
+            height: auto;
+            background-image: url('drawers.jpg');
+            background-size: cover;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        .right-section{
+            width: 59%;
+            height: 100%;
+            padding: 40px;
+        }
+        title{
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #48556a;
+        }
+        p{
+            color: hsl(214, 17%, 51%);
+            line-height: 1.3rem;
+        }
+        .profile-share{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .profile{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .avatar img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .profile-name{
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .profile-name span:nth-of-type(1){
+            color: hsl(217, 19%, 35%);
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+        .profile-name span:nth-of-type(2){
+            color: hsl(212, 23%, 69%);
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(210, 46%, 95%);
+            padding: 10px;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            font-size: 1rem;
+            color: hsl(217, 19%, 35%);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #9eafc2;
+            color: hsl(210, 46%, 95%);
+        }
+        @media (max-width: 650px){
+            main{
+                height: auto;
+            }
+            .main-content{
+                margin: 20px;
+                flex-direction: column;
+                width: 100%;
+                border-bottom-left-radius: 12px;
+            }
+            .image-cover{
+                width: 100%;
+                height: 300px;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 12px;
+            }
+            .right-section{
+                width: 100%;
+                height: auto;
+                padding: 0;
+            }
+            .profile-share{
+                height: 80px;
+                width: 100%;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+            }
+            .title{
+                padding-top: 40px;
+            }
+            .title, .profile-share, p{
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .profile{
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="main-content">
+            <div class="image-cover"></div>
+            <div class="right-section">
+                <div class="title">
+                    Shift the overal look and fell by adding these wonderful
+                    touches to furniture in youre home
+                </div>
+                <p>
+                    Even been in a room and felt like somthing was missing? Pehaps
+                    it felt sightly bare and univiting. I've got some simple tips
+                    to help you make any room feel complate.
+                </p>
+                <div class="profile share">
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="avatar-michelle.jpg" alt="">
+                        </div>
+                        <div class="profile-name">
+                            <span>Michelle Appleton</span>
+                            <span>21 March 2024</span>
+                            
+                        </div>
+                        <div class="share">
+                            <img src="icon-share.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
